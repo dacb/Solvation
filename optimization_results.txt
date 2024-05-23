@@ -1,2 +1,0 @@
-Optuna Best weights: {'weight_gnn': 0.6306445985729451, 'weight_mdm': 0.7775387543020923, 'weight_smi': 0.4295662789522257}
-CV Best weights : {'weight_gnn': 0.5948275422718199	'weight_mdm': 0.9463097878036206	'weight_smi': 0.33177489589161224}
