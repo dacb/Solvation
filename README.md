@@ -1,4 +1,4 @@
-[https://img.shields.io/github/license/FaizaAB/Solvation]
+(https://img.shields.io/github/license/FaizaAB/Solvation)
 # Solvation Meta Predictor
 
 
