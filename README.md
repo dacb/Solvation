@@ -8,11 +8,11 @@ This repository contains code for predicting the aqueous solubility of organic m
 ├── LICENSE.md
 ├── README.md
 ├── data
-│   ├── create_data.py
-│   ├── dataset.csv:Zone.Identifier
-│   ├── fragments.dat
-│   ├── mol_des_utils.py
-│   └── xyz.py
+│├── create_data.py
+│├── dataset.csv:Zone.Identifier
+│├── fragments.dat
+│├── mol_des_utils.py
+│└── xyz.py
 ├── ensemble
 │   ├── CV.py
 │   ├── KNN.py
