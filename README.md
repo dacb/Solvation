@@ -5,7 +5,6 @@
 This repository contains code for predicting the aqueous solubility of organic molecules using machine learning models. The models and dataset are based on the research paper: [Predicting Aqueous Solubility of Organic Molecules Using Deep Learning Models with Varied Molecular Representations](https://pubs.acs.org/doi/full/10.1021/acsomega.2c00642).
 
 ## Repository Structure
-'
 ├── LICENSE.md
 ├── README.md
 ├── data
@@ -48,7 +47,6 @@ This repository contains code for predicting the aqueous solubility of organic m
     ├── smi_paper.h5
     ├── smi_utils.py
     └── train.py
-    '
 ## Usage
 
 1. **Download Data**: Download the dataset from [this link](https://figshare.com/s/542fb80e65742746603c) and save it as `data.csv` in the `./data` folder.
