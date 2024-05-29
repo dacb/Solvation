@@ -5,6 +5,48 @@
 This repository contains code for predicting the aqueous solubility of organic molecules using machine learning models. The models and dataset are based on the research paper: [Predicting Aqueous Solubility of Organic Molecules Using Deep Learning Models with Varied Molecular Representations](https://pubs.acs.org/doi/full/10.1021/acsomega.2c00642).
 
 ## Repository Structure
+├── LICENSE.md
+├── README.md
+├── data
+│ ├── create_data.py
+│ ├── dataset.csv
+│ ├── fragments.dat
+│ └── xyz.py
+├── ensemble
+│ ├── CV.py
+│ ├── KNN.py
+│ ├── best_k.py
+│ └── ensemble_prediction.ipynb
+├── gnn
+│ ├── config.py
+│ ├── gnn_best.pt
+│ ├── gnn_model.py
+│ ├── gnn_paper.pt
+│ ├── gnn_utils.py
+│ ├── predict.ipynb
+│ └── train.py
+├── mdm
+│ ├── config.py
+│ ├── init.py
+│ ├── mdm_best.h5
+│ ├── mdm_model.py
+│ ├── mdm_paper.h5
+│ ├── mdm_utils.py
+│ ├── predict.ipynb
+│ └── train.py
+├── smi
+│ ├── config.py
+│ ├── init.py
+│ ├── predict.ipynb
+│ ├── smi_best.h5
+│ ├── smi_model.py
+│ ├── smi_paper.h5
+│ └── smi_utils.py
+│ └── train.py
+├── mol_des_utils.py
+├── optuna_optimization.py
+└── environment.yml
+
 
 ├── LICENSE.md
 ├── README.md
