@@ -1,5 +1,5 @@
 <img alt="GitHub License" src="https://img.shields.io/github/license/FaizaAB/Solvation">
-[![Build Status](https://github.com/FaizaAB/Solvation/actions/workflows/main.yml/badge.svg)](https://github.com/FaizaAB/Solvation/actions)
+[![Build Status](https://github.com/FaizaAB/Solvation/actions/workflows/main.yml/badge.svg)]<https://github.com/FaizaAB/Solvation/actions>
 
 # Solvation Meta Predictor
 
