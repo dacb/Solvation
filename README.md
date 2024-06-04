@@ -57,7 +57,7 @@ This repository contains code for predicting the aqueous solubility of organic m
       jupyter notebook ensemble_prediction.ipynb
       ```
 
-##![Solvation Meta Predictor Perfomacne](Solvation/ensemble/Performance.png)
+![Solvation Meta Predictor Perfomacne](Performance.png)
 
 ## Additional Information
 For detailed instructions on how to run the models, featurize the data, and other specifics, please refer to the original research paper linked above. The methods and techniques described in the paper are critical for understanding and effectively using this repository.
