@@ -34,14 +34,14 @@ def load_models_and_predict(val_loader, test_loader, device):
     _, gnn_val_pred = gnn.gnn_utils.test_fn_plotting(val_loader, gnn_model, device)
     _, gnn_test_pred = gnn.gnn_utils.test_fn_plotting(test_loader, gnn_model, device)
 
-    smi_x_val = np.loadtxt("./smi_input/x_val.txt")
-    smi_x_test = np.loadtxt("./smi_input/x_test.txt")
+    smi_x_val = np.loadtxt("./data/x_val.txt")
+    smi_x_test = np.loadtxt("./data/x_test.txt")
     smi_model = load_model(smi.config.best_model)
     smi_val_pred = smi_model.predict(smi_x_val).ravel()
     smi_test_pred = smi_model.predict(smi_x_test).ravel()
 
-    mdm_x_val = np.loadtxt("./input/x_val.txt")
-    mdm_x_test = np.loadtxt("./input/x_test.txt")
+    mdm_x_val = np.loadtxt("./data/x_val.txt")
+    mdm_x_test = np.loadtxt("./data/x_test.txt")
     mdm_model = load_model(mdm.config.best_model)
     mdm_val_pred = mdm_model.predict(mdm_x_val).reshape(-1,)
     mdm_test_pred = mdm_model.predict(mdm_x_test).reshape(-1,)
@@ -73,7 +73,7 @@ def main():
     gnn_val_pred, smi_val_pred, mdm_val_pred, gnn_test_pred, smi_test_pred, mdm_test_pred = load_models_and_predict(val_loader, test_loader, device)
 
     valid_data = pd.read_csv('./data/val.csv')
-    test_data = pd.read_csv("./New_test_data.cv")
+    test_data = pd.read_csv("./data/test.csv")
     y_true = valid_data['log_sol']
 
     valid_data['gnn_predict'] = pd.Series(gnn_val_pred)
