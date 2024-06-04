@@ -13,7 +13,7 @@ import smi
 import mdm
 import gnn
 
-DATA_PATH = '/home/fostooq/solubility-prediction-paper/data/'
+DATA_PATH = '../data/'
 BS = gnn.config.bs
 N_SPLITS = 10  # Number of folds for cross-validation
 
@@ -71,8 +71,8 @@ def objective(trial, val_data, smi_x_val, mdm_x_val, y_val, gnn_model, smi_model
 
 def main():
     val_data = load_pickled_data(os.path.join(DATA_PATH, "val.pkl.gz"))
-    smi_x_val = np.loadtxt("smi_input/x_val.txt")
-    mdm_x_val = np.loadtxt("input/x_val.txt")
+    smi_x_val = np.loadtxt("data/x_val.txt")
+    mdm_x_val = np.loadtxt("data/x_val.txt")
     y_val = np.loadtxt("input/y_val.txt")
 
     gnn_model, smi_model, mdm_model, device = setup_models()
