@@ -12,7 +12,7 @@ import smi
 import mdm
 import gnn
 
-DATA_PATH = '/home/fostooq/solubility-prediction-paper/data/'
+DATA_PATH = '../data/'
 BS = gnn.config.bs
 
 def load_pickled_data(file_path):
