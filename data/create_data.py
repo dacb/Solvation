@@ -97,6 +97,9 @@ df['rdkit_smiles'] = np.nan
 for i in tqdm(range(df.shape[0])):
     try:
         df.loc[i,'rdkit_smiles'] = Chem.MolToSmiles(Chem.MolFromSmiles(df.loc[i, 'SMILES']))
+    except RuntimeError as e:
+        print('caught a fatal runtime: ', e)
+        raise
     except:
         pass
     
