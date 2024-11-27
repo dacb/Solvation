@@ -1,4 +1,4 @@
-name: base
+name: solvation
 channels:
   - conda-forge
   - defaults
@@ -360,4 +360,3 @@ dependencies:
       - xgboost==2.0.2
       - xlrd==2.0.1
       - xyzservices==2024.4.0
-prefix: /Users/anna/anaconda3
