@@ -4,7 +4,7 @@ from torch_geometric.nn import GCNConv
 from torch_geometric.nn import global_add_pool, global_mean_pool
 from torch_geometric.nn import EdgeConv
 from torch.nn import Linear
-from . import config
+import config
 
 params = {'a1': 0, 'a2': 2, 'a3': 1, 'a4': 2, 'bs': 1, 'd1': 0.015105134306121593, 'd2': 0.3431295462686682, \
       'd3': 0.602688496976768, 'd4': 0.9532038077650021, 'e1': 256.0, 'eact1': 0, 'edo1': 0.4813038851902818,\

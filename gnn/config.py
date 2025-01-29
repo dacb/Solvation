@@ -1,5 +1,5 @@
-data_dir = "/home/fostooq/solubility-prediction-paper/data/"
-gnn_data_dir = "/home/fostooq/solubility-prediction-paper/data/"
+data_dir = "/Users/anna/2024.10.29/Solvation/data/"
+gnn_data_dir = "/Users/anna/2024.10.29/Solvation/data/"
 n_features = 65
 bs = 64
 max_epochs = 1000

@@ -1,4 +1,4 @@
-from . import config
-from . import gnn_utils
-from . import gnn_model
-from . import train
+import config
+import gnn_utils
+import gnn_model
+import train

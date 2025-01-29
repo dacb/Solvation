@@ -32,7 +32,7 @@ from sklearn.metrics import r2_score
 from scipy.stats import spearmanr
 
 import pickle, gzip
-from . import config
+import config
 
 
 def set_seed(seed):
@@ -312,6 +312,10 @@ class EarlyStopping:
             self.counter = 0
 
     def save_checkpoint(self, val_loss, model):
+	# Ensure the parent directory exists
+        checkpoint_dir = os.path.dirname(self.chkpoint_name)
+        if checkpoint_dir and not os.path.exists(checkpoint_dir):
+            os.makedirs(checkpoint_dir)
         '''Saves model when validation loss decrease.'''
         if self.verbose:
             print(f'Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ...')

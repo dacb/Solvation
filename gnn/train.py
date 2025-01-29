@@ -22,9 +22,9 @@ from sklearn.metrics import mean_absolute_error
 import pickle
 import gzip, pickle
 from torch_geometric.data import DataLoader
-from . import gnn_utils
-from . import gnn_model
-from . import config
+import gnn_utils
+import gnn_model
+import config
 import datetime
 
 def run():
