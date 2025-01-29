@@ -1,4 +1,4 @@
-data_dir = "/home/fostooq/solubility-prediction-paper/data/"
+data_dir = "/Users/anna/2024.10.29/Solvation/data/"
 best_model = "mdm/mdm_best.h5"
 max_epochs = 1000
 batch_size = 64

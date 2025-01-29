@@ -1,7 +1,7 @@
-import keras
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation
-from . import config
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Activation
+from tensorflow.keras.optimizers import RMSprop
+import config
 
 act = {0:'relu', 1:'selu', 2:'sigmoid'}
 args={'a1': 2, 'a2': 0, 'a3': 1, 'a4': 1, 'a5': 0, 'bs': 1, 'd1': 0.10696194799818459, 'd2': 0.6033824611348487,\
@@ -18,9 +18,13 @@ def create_model(input_shape):
     model.add(Dropout( args['d2'] ))
 
     model.add(Dense(1, activation = 'linear'))
-    rmsprop = keras.optimizers.RMSprop( lr = config.lr )
+    rmsprop = RMSprop(learning_rate=config.lr)
+
     opt = rmsprop
 
     model.compile(loss='mean_squared_error', optimizer=opt)
     
     return model
+
+
+

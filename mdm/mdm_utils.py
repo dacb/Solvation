@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import matplotlib.pyplot as plt
-from . import config
+import config
 
 def get_transformed_data(train,val,test, to_drop, y):
 
