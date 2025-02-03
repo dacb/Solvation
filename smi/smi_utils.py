@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 from scipy.stats import spearmanr
 from sklearn.metrics import mean_absolute_error
-from . import config
+import config
 
 def val_results(x_valx, y_valx, lc_name, modelx):
 

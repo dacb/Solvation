@@ -1,21 +1,20 @@
-import keras
+import tensorflow as tf
 import pandas as pd
-from keras.callbacks import EarlyStopping
-from keras.callbacks import ModelCheckpoint
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.metrics import mean_squared_error
-from keras.preprocessing import sequence
-from keras import backend as K
-from keras.models import load_model
-from matplotlib import pyplot as plt
+from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import load_model
+import matplotlib.pyplot as plt 
 import numpy as np
 from rdkit import Chem
 from sklearn.metrics import r2_score, mean_squared_error
 from scipy.stats import spearmanr
 import json
 import os
-from . import smi_utils
-from . import smi_model
-from . import config
+import smi_utils
+import smi_model
+import config
 import datetime
 
 def run():
@@ -47,3 +46,5 @@ def run():
     
 if __name__ == "__main__":
     run()
+
+
