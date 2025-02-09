@@ -1,5 +1,5 @@
-import config
-import mdm_utils
-import mdm_model
-import train
+from . import config
+from . import mdm_utils
+from . import mdm_model
+from . import train
 

@@ -15,9 +15,9 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 import pickle
 import json
-import mdm_model
-import config
-import mdm_utils
+from . import mdm_model
+from . import config
+from . import mdm_utils
 import datetime
 
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
