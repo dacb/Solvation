@@ -9,6 +9,10 @@ from torch_geometric.data import DataLoader
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import KFold
 import optuna
+
+solvation_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(solvation_path)
+
 import smi
 import mdm
 import gnn
@@ -69,11 +73,12 @@ def objective(trial, val_data, smi_x_val, mdm_x_val, y_val, gnn_model, smi_model
     # Return average MSE across all folds
     return np.mean(mse_scores)
 
+
 def main():
     val_data = load_pickled_data(os.path.join(DATA_PATH, "val.pkl.gz"))
-    smi_x_val = np.loadtxt("data/x_val.txt")
-    mdm_x_val = np.loadtxt("data/x_val.txt")
-    y_val = np.loadtxt("input/y_val.txt")
+    smi_x_val = np.loadtxt("../smi/smi_input/x_val.txt")
+    mdm_x_val = np.loadtxt("../mdm/input/x_val.txt")
+    y_val = np.loadtxt("../input/y_val.txt")
 
     gnn_model, smi_model, mdm_model, device = setup_models()
 
