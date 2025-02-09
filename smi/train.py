@@ -12,9 +12,9 @@ from sklearn.metrics import r2_score, mean_squared_error
 from scipy.stats import spearmanr
 import json
 import os
-import smi_utils
-import smi_model
-import config
+from . import smi_utils
+from . import smi_model
+from . import config
 import datetime
 
 def run():

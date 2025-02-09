@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, LSTM, Dropout, Bidirectional, Embedding
 from tensorflow.keras.optimizers import Adam
-import config
+from . import config
 
 args = {'a1': 2, 'a3': 0, 'a4': 0, 'a5': 0, 'bs': 2, 'd1': 0.08607118576024131, 'd2': 0.4730059911045743, \
         'd3': 0.186637772607526, 'd4': 0.27122468227787655, 'd5': 0.15564916131523265, \
