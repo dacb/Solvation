@@ -32,7 +32,7 @@ from sklearn.metrics import r2_score
 from scipy.stats import spearmanr
 
 import pickle, gzip
-import config
+from . import config
 
 
 def set_seed(seed):
