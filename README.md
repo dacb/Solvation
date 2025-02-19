@@ -8,6 +8,14 @@ This repository contains code for predicting the aqueous solubility of organic m
 
 ## Usage
 
+```
+git submodule init
+git submodule update
+patch <input_file> <patches/input_file.patchfile>
+cd pnnlsolpaper/data
+python ./create_data.py
+```
+
 1. **Download Data**: Download the dataset from [this link](https://figshare.com/s/542fb80e65742746603c) and save it as `data.csv` in the `./data` folder.
 
 2. **Generate Features**:
