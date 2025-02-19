@@ -1,0 +1,3 @@
+[submodule "pnnlsolpaper"]
+	path = pnnlsolpaper
+	url = https://github.com/pnnl/solubility-prediction-paper
